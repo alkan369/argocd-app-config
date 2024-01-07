@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydealership
+spec:
+  selector:
+    matchLabels:
+      app: mydealership
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mydealership
+    spec:
+      containers:
+      - name: mydealership
+        image: alkan369/car-dealership-image:21d578d234646d83c2452330cad9777b4d630a7b
+        ports:
+        - containerPort: 8080
