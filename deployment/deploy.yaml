@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: mydealership
-        image: alkan369/car-dealership-image:21d578d234646d83c2452330cad9777b4d630a7b
+        image: alkan369/car-dealership-image:ac968cb48101c4b49c38870232d86c3028b649ea
         ports:
         - containerPort: 8080
